@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web1</title>
+    <style>
+        body,
+        html {
+            height: 100%
+        }
+        body {
+            background-image: url(https://i.pinimg.com/originals/f4/0c/fe/f40cfef2ef26c8f87ea65894d0ba41d7.jpg);
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            opacity: 20;
+        }
+
+
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        .navbar li a:active {
+            color: rgb(16, 112, 168)
+        }
+
+        .search {
+            float: right;
+            padding: -1px 75px;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        .rg {
+            text-underline-position: below;
+            color: navy;
+            font-size: 34px;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 2px solid black;
+            margin: 4px;
+            padding: 4px;
+            widows: 45px;
+        }
+
+        .sports {
+            font-size: 24px;
+            display: block;
+            border: 2px solid black;
+            width: 45px;
+            height: 20px;
+            margin-top: 33px;
+        }
+
+        .cricket {
+            display: block;
+            width: 45px;
+            height: 23px;
+        }
+
+        .myform {
+            float: left;
+            display: block;
+            border: 2px solid white;
+            height: 625px;
+            width: 550px;
+            margin: auto;
+            background-color: black;
+            flex-direction: row;
+        }
+
+        .formgrp {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            border: 3px solid white;
+            border-radius: 10px;
+            width: 483px;
+            height: 52px;
+            margin: 20px auto;
+            padding-top: 2%;
+            cursor: pointer;
+            flex-direction: row;
+
+        }
+
+        .jn {
+            text-align: center;
+            color: rgb(240, 224, 9);
+        }
+
+        button {
+            font-weight: bold;
+            display: block;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: auto;
+            padding: 10px 26px;
+            width: 33%;
+            border: 2px solid blue;
+        }
+
+        input {
+            margin: auto;
+            padding: 2px 2px;
+            font-weight: bold;
+        }
+
+        .f1 {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href=""> HOME &nbsp;</a></li>
+                <li><a href=""> GALLERY &nbsp;</a></li>
+                <li><a href=""> FITNESS ACTIVITIES &nbsp;</a></li>
+                <li><a href=""> CONTACT US &nbsp; </a></li>
+                <li><a href=""> ABOUT US &nbsp; </a></li>
+                <div class="search">
+                    <img src="https://www.graphicsprings.com/filestorage/stencils/4e998e68a2323649ee78e08201b46b26.png?width=50&height=50"
+                        alt="">
+                </div>
+        </nav>
+        </ul>
+        <div class="rg">
+            WELCOME TO "RG" CRICKET CLUB
+        </div>
+        <div class="myform">
+            <h2 class="jn">JOIN NOW</h2>
+            <form action="backend.php">
+                <div class="formgrp">
+                    Name:<input type="text" name="Name" class="f1" placeholder="Enter your name here">
+                </div>
+                <div class="formgrp">
+                    Age:<input type="number" name="Age" class="f1" placeholder="Enter your age here">
+                </div>
+                <div class="formgrp">
+                    Contact:<input type="" name="Contact" class="f1" placeholder="Contact No.">
+                </div>
+                <div class="formgrp">
+                    Address: <input type="" name="Contact" class="f1" placeholder="Locality">
+                </div>
+                <div class="formgrp">
+                    Gender: <input type="radio" name="Mygender">Male&nbsp; <input type="radio"name="Mygender">Female &nbsp;
+                        
+                </div>
+                <div class="formgrp">
+                    Skills:&nbsp;<input type="radio" name="Myskill">Batting&nbsp;<input type="radio"
+                        name="Myskill">Bowling&nbsp;<input type="radio" name="Myskill">All-Rounder&nbsp;
+                </div>
+                <button>
+                    Submit
+                </button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
